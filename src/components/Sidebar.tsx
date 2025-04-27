@@ -6,14 +6,14 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
-  const [selectedItem, setSelectedItem] = useState<string>('Dashboard');
+  const [selectedItem, setSelectedItem] = useState<string>('Item A');
 
   const menuItems = [
-    { id: 'Dashboard', label: 'Dashboard' },
-    { id: 'Profile', label: 'Profile' },
-    { id: 'Settings', label: 'Settings' },
-    { id: 'Help', label: 'Help' },
-    { id: 'Documentation', label: 'Documentation' }
+    { id: 'Item A', label: 'Item A' },
+    { id: 'Item B', label: 'Item B' },
+    { id: 'Item C', label: 'Item C' },
+    { id: 'Item D', label: 'Item D' },
+    { id: 'Item E', label: 'Item E' }
   ];
 
   return (
